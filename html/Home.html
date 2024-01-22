@@ -6,71 +6,66 @@
     <title>Home</title>
     <style>
         body {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://wallpaperaccess.com/full/1567736.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/background.png");
             font-family: 'Century Gothic';
             margin: 0;
         }
         .header {
-            background-color: white;
+            background-image: linear-gradient(to top, rgba(0, 0,0 ,0), rgba(0, 0, 0, 0.4));
             display: flex;
-            justify-content: space-between;
-            padding: 20px;
+            justify-content: space-around;
+            padding: 40px;
         }
-        .logo a, .nav a {
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            padding: 10px;
-            margin: 10px;
-        }
-        .nav a:hover, .main a:hover {
+        .logo a, .nav a, .account a {
             color: white;
-            background: #74B49B;
-            transition: .5s;
+            text-decoration: none;
+            padding: 20px;
+            margin: 5px;
+        }
+        .nav a:hover {
+            border: solid 1px white;
         }
         .nav .active {
-            border-bottom: 5px solid #74B49B;
-            border-radius: 5px;;
+            color: #A1DBF1;
             pointer-events: none;
-            padding-bottom: 5px;
         }
-        .main, .link {
-            text-align: center;
-            font-weight: bold;
+        .account .active {
+            padding: 10px 30px 10px 30px;
+            background-color: #71D5E4;
+            color: black;
+            border-radius: 20px;
         }
-        .main p {
-            background: url("https://wallpaperaccess.com/full/9648324.jpg");
-            background-size: cover;
-            background-clip: text;
-            color: transparent;
-            font-size: 150px;
+        .account a:hover{
+            background-color: #00B6BC;
         }
-        .link a {
-            display: inline-flex;
+        .main {
+            display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            padding: 200px;
+        }
+        .title p {
+            color: #E4F4F3;
+            font-size: 110px;
+            font-family: 'Impact';
+            font-weight: bold;
+            margin: 0;
+        }
+        .description p {
             color: white;
-            text-decoration: none;
-            margin: 0 5px 5px 5px;
-            width: 520px;
-            height: 170px;
-            font-size: 50px;
+            font-family: 'Arial';
+            font-size: 30px;
+            margin: 0;
         }
-        #prescriptions:hover {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://wallpaperaccess.com/full/1503528.jpg");
-            background-size: cover;
-        }
-        #records:hover {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://wallpaperaccess.com/full/10862338.jpg");
-            background-size: cover;
-        }
-        #inventory:hover {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://wallpaperaccess.com/full/9648347.jpg");
-            background-size: cover;
+        .footer {
+            background-image: linear-gradient(to bottom, rgba(0, 0,0 ,0), rgba(0, 0, 0, 0.2));
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
         }
     </style>
 </head>
@@ -79,23 +74,36 @@
 
         <div class="header">
             <div class="logo">
-                <a href="#"> Hospital Management System </a>
+                <a href="#"> Healthcare </a>
             </div>
             <div class="nav">
                 <a class="active" href="#">Home</a>
                 <a href="#">Prescriptions</a>
-                <a href="Records.html">Records</a>
+                <a href="#">Appointments</a>
+                <a href="PatientRecords.html">Records</a>
                 <a href="#">Inventory</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="account">
+                <a class="active" href="#">Login</a>
             </div>
         </div>
 
         <div class="main">
-            <p>Hospital Management System</p>
-            <div class="link">
-                <a href="#" id="prescriptions" style="background-color: #5C8D89;">Prescriptions</a>
-                <a href="Records.html" id="records" style="background-color: #74B49B;">Records</a>
-                <a href="#" id="inventory" style="background-color: #A7D7C5;">Inventory</a>
+            <div class="content">
+                <div class="title">
+                    <p>Healthcare Management System</p>
+                </div>
+                <div class="description">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
             </div>
+        </div>
+
+        <div class="footer">
+            <p>© Healthcare Management System 2024</p>
         </div>
     </div>
 </body>
