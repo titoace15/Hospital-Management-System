@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./appointment2.css" />
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#"> Healthcare </a>
+            </div>
+            <div class="nav">
+                <a class="active" href="#">Home</a>
+                <a href="#">Prescriptions</a>
+                <a href="#">Appointments</a>
+                <a href="PatientRecords.html">Records</a>
+                <a href="#">Inventory</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="account">
+                <a class="active" href="#">Login</a>
+            </div>
+        </div>
+        
+
+         <!-- Appontment Form Section -->
+         
+<div class="appointment-section">
+    <div class="blurred-background"></div> 
+    <div class="appointment-container">
+        <h1>Book an Appointment</h1>
+        <form action="appointment3.php" method="post">
+            <div>
+                <label for="doctor">Choose a Doctor:</label>
+                <select id="doctor" name="doctor">
+                    <option value="doctor1">Choose doctor</option>
+                    <option value="doctor2">Henry Sy</option>
+                    <option value="doctor3">Kuya Will</option>
+                    <option value="doctor4">Kuya J</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</div>
+       
+
+
+        <div class="footer">
+            <p>© Healthcare Management System 2024</p>
+        </div>
+    </div>
+</body>
+</html>
